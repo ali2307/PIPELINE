@@ -1,0 +1,556 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+@font-face {
+  font-family: "Optima";
+  src: url("/fonts/OPTIMA.woff") format("woff"),
+    url("/fonts/OPTIMA.ttf") format("truetype"),
+    url("/fonts/OPTIMA.otf") format("opentype");
+  /* Add more formats if necessary */
+  font-weight: normal;
+  font-style: normal;
+}
+* .embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+.embla1 {
+  overflow: hidden;
+  width: 100%; /* Ensure the carousel takes the full width */
+}
+
+.embla__container1 {
+  display: flex;
+  width: 100%;
+
+  /* Ensure the container takes the full width */
+}
+
+.embla__slide1 {
+  position: relative;
+  flex: 0 0 22%; /* Each slide takes up 1/4 of the container */
+  min-width: 17%;
+}
+
+@media (max-width: 992px) {
+  .embla__slide1 {
+    flex: 1 1 100%; /* Each card takes full width */
+    margin: 5px 0;
+    min-width: 28%;
+  }
+}
+
+@media (max-width: 600px) {
+  .embla__slide1 {
+    flex: 1 1 100%; /* Each card takes full width */
+    margin: 5px 0;
+    min-width: 100%;
+  }
+}
+
+.embla__pagination {
+  display: flex;
+  justify-content: center;
+}
+.embla__pagination_1 {
+  display: flex;
+  justify-content: start;
+}
+
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__pagination__dot {
+  width: 13px;
+  height: 13px;
+  background-color: #cabfbf;
+  border-radius: 50%;
+  margin: 0 8px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.embla__pagination__dot.is-selected {
+  background-color: #0369a1;
+  opacity: 1;
+}
+
+.embla__container2 {
+  display: flex;
+  width: 100%;
+}
+
+.embla__slide2 {
+  flex: 0 0 25%; /* Each slide takes up 1/4 of the container */
+  max-width: 40%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .embla__slide2 {
+    flex: 0 0 50%; /* Adjust to show fewer cards on smaller screens */
+    max-width: 50%;
+  }
+}
+@media (max-width: 576px) {
+  .embla__slide2 {
+    flex: 0 0 100%; /* Adjust to show fewer cards on smaller screens */
+    max-width: 100%;
+  }
+}
+.embla__container3 {
+  display: flex;
+  width: 100%; /* Adjust to fit 2 cards at a time */
+}
+
+.embla__slide3 {
+  flex: 0 0 50%; /* Each slide takes up 50% of the container */
+
+  box-sizing: border-box;
+}
+
+.emblap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__containerp {
+  display: flex;
+}
+
+.embla__slidep {
+  flex: 0 0 33.33%; /* Show 3 items per view */
+  margin-right: 1rem; /* Space between images */
+}
+.embla__slideu {
+  flex: 0 0 50%; /* Show 3 items per view */
+  margin-right: 1rem; /* Space between images */
+}
+
+.embla__prevp,
+.embla__nextp {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  z-index: 10;
+}
+.embla__prevp {
+  left: 10px; /* Position on the left side */
+}
+
+.embla__nextp {
+  right: 10px; /* Position on the right side */
+}
+
+@media (max-width: 768px) {
+  .embla__slide3 {
+    flex: 0 0 100%; /* Show one card at a time on smaller screens */
+    max-width: 100%;
+  }
+}
+/* globals.css or a specific Embla CSS file */
+.emblau {
+  @apply overflow-hidden w-full;
+}
+
+.embla__containeru {
+  @apply flex gap-5;
+}
+
+.embla__slideu {
+  @apply flex-shrink-0 w-[50%];
+}
+
+.bg-banner a:hover {
+  color: #61b9ef;
+}
+.b-cyan,
+.portal {
+  background-color: #0670b1;
+}
+
+.text-cyan {
+  color: #0670b1;
+}
+.b-cyan:hover {
+  background-color: #ffffff;
+  color: #0671b2;
+}
+/* .border-color::before{
+  content: '';
+    position: absolute;
+   
+    border-left: 6px solid #0671B2;
+    /* Adjust thickness and color as needed */
+/* height: 205px;
+      width: 6px;
+      top:18%;
+      right: 52%;
+
+} */
+.react-datepicker-wrapper {
+  display: inline-block;
+  padding: 0;
+  border-color: #373737;
+  width: 100%;
+
+  /* height: 40px; */
+}
+.css-b62m3t-container {
+  border-color: #373737;
+  height: 30px;
+}
+.css-1xbf4i3-control {
+  min-height: 30px !important;
+  border-color: #373737;
+}
+.react-datepicker__input-container {
+  position: relative;
+  display: inline-block;
+  /* width: 160px; */
+}
+.border-1 {
+  border-width: 6px;
+}
+.bg-gray-1 {
+  background: #f8f8f8;
+}
+[type="checkbox"],
+[type="radio"] {
+  color: #0369a1;
+}
+.arrow-l {
+  bottom: 60%;
+  left: 10%;
+  z-index: 30;
+}
+.arrow-r {
+  top: 58%;
+  right: 20%;
+}
+.tab-1 {
+  width: 495px;
+  height: 60px;
+  top: 643px;
+  left: 122px;
+  gap: 0px;
+  border-radius: 25px 0px 0px 0px;
+  opacity: 0px;
+}
+.tab-2 {
+  width: 495px;
+  height: 60px;
+  top: 643px;
+  left: 122px;
+  gap: 0px;
+  border-radius: 0px 25px 0px 0px;
+  opacity: 0px;
+}
+.tab li:hover {
+  background: #0670b1;
+  color: #fff;
+  border: none;
+}
+.text-search {
+  background: #0670b11a !important;
+
+  color: #0670b180;
+  padding: 10px;
+}
+.mdi-magnify {
+  color: #0670b1;
+
+  font-size: 30px;
+}
+
+.tab-now {
+  box-shadow: 0px 32px 34px 0px #00000022;
+}
+
+.bg-field {
+  background: #0670b11a;
+  padding: 10px;
+}
+.bg-tenant {
+  background: #bec3c5d6;
+}
+
+.testi-bg {
+  background: #373737;
+}
+.reality {
+  color: #129cff;
+}
+.footer {
+  background-color: #161615;
+}
+
+.bg-testi {
+  height: 273px;
+  width: 100%;
+  margin-top: -92px;
+  background: rgb(55, 55, 55);
+}
+.arrow-r {
+  top: 58%;
+  right: 20%;
+}
+.arrow-l {
+  top: 10%;
+  left: 20%;
+}
+.card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+}
+.dhabi {
+  color: rgba(168, 191, 205, 1);
+}
+
+@media (max-width: 1400px) {
+  .exp-uae {
+    background-position: center;
+  }
+}
+@media (max-width: 768px) {
+  .abt-dlg {
+    margin: 40px;
+    display: grid;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* sidebar */
+.c-main-nav .nav-footer {
+  height: 58px;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  -webkit-box-shadow: 0 0 1px 0 rgba(39, 50, 57, 0.2);
+  box-shadow: 0 0 1px 0 rgba(39, 50, 57, 0.2);
+  right: 0;
+  bottom: 0;
+  padding-left: inherit;
+}
+.card {
+  flex: 1 1 200px; /* Grow, shrink, and set a minimum width */
+  /* max-width: 200px; */
+  margin: 10px;
+}
+.unit-speci {
+  grid-template-columns: 200px 1fr;
+}
+
+/* - Start BackGround Animation 
+*/
+.area {
+  background: #f8f4f499;
+  background: -webkit-linear-gradient(to left, #b1b2cc, #3c3d49);
+  width: 100%;
+  height: 467px;
+  position: absolute;
+  z-index: -1;
+}
+
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: #73b1d747;
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 90px;
+  height: 90px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 90px;
+  height: 90px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 70px;
+  height: 70px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 25px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 50px;
+  height: 50px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+.custom-border {
+  @apply relative border-l border-r border-b border-black;
+  border-top: none; /* No top border */
+}
+
+.custom-border::before,
+.custom-border::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 1px; /* Thickness of the top border */
+  background-color: black;
+  width: 25%; /* 25% width for the border */
+}
+
+.custom-border::before {
+  left: 0;
+}
+
+.custom-border::after {
+  right: 0;
+}
+
+/* Moves the image up into the free (borderless) section */
+.move-image {
+  position: absolute;
+  top: -87px; /* Adjust this value to control how much the image overlaps */
+}
+/*
+-- End BackGround Animation 
+*/
+/* Hide the default checkbox */
+input[type="checkbox"] {
+  appearance: none; /* or use -webkit-appearance, -moz-appearance for specific browsers */
+  -webkit-appearance: none;
+  width: 29px;
+  height: 27px;
+  border: 1px solid #656566;
+  border-radius: 4px;
+}
+
+/* Checkbox checked state */
+input[type="checkbox"]:checked {
+  border: 1px solid #656566;
+  position: relative;
+}
+
+/* Optional: add a checkmark using a pseudo-element */
+input[type="checkbox"]:checked::after {
+  content: "✔"; /* or use unicode '\2714' */
+  color: rgb(12, 120, 163);
+  font-size: 17px;
+  position: absolute;
+  top: 0px;
+  left: 7px;
+}
+
+@media (max-width: 576px) {
+  .move-image {
+    position: absolute;
+    top: -35px; /* Adjust this value to control how much the image overlaps */
+  }
+}

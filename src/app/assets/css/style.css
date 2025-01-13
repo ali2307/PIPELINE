@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css);
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Your custom styles */
+@font-face {
+  font-family: "DM Sans";
+  src: url("assets/fonts/DM-sans/DMSans-Regular.ttf") format("woff2"),
+    url("assets/fonts/DM-sans/DMSans-Medium.ttf") format("woff");
+  /* Add other font formats if available */
+}
+
+.font-sans {
+  font-family: "DM Sans", sans-serif;
+}
+
+.bg-banner a:hover {
+  color: #61b9ef;
+}
+
+.text-cyan {
+  color: #0670b1;
+}
+
+/* .border-color::before{
+  content: '';
+    position: absolute;
+   
+    border-left: 6px solid #0671B2;
+    /* Adjust thickness and color as needed */
+/* height: 205px;
+      width: 6px;
+      top:18%;
+      right: 52%;
+
+} */
+*/ .border-1 {
+  border-width: 6px;
+}
+.bg-gray-1 {
+  background: #f8f8f8;
+}
+.arrow-l {
+  bottom: 60%;
+  left: 10%;
+  z-index: 30;
+}
+.arrow-r {
+  top: 58%;
+  right: 20%;
+}
+.tab-1 {
+  width: 495px;
+  height: 60px;
+  top: 643px;
+  left: 122px;
+  gap: 0px;
+  border-radius: 25px 0px 0px 0px;
+  opacity: 0px;
+}
+.tab-2 {
+  width: 495px;
+  height: 60px;
+  top: 643px;
+  left: 122px;
+  gap: 0px;
+  border-radius: 0px 25px 0px 0px;
+  opacity: 0px;
+}
+.tab li:hover {
+  background: #0670b1;
+  color: #fff;
+  border: none;
+}
+.text-search {
+  background: #0670b11a !important;
+
+  color: #0670b180;
+  padding: 10px;
+}
+.mdi-magnify {
+  color: #0670b1;
+
+  font-size: 30px;
+}
+
+.tab-now {
+  box-shadow: 0px 32px 34px 0px #00000022;
+}
+
+.bg-field {
+  background: #0670b11a;
+  padding: 10px;
+}
+.bg-tenant {
+  background: #bec3c5d6;
+}
+
+.testi-bg {
+  background: #373737;
+}
+.reality {
+  color: #129cff;
+}
+.footer {
+  background-color: #161615;
+}
+
+.bg-testi {
+  height: 273px;
+  width: 100%;
+  margin-top: -92px;
+  background: rgb(55, 55, 55);
+}
+.arrow-r {
+  top: 58%;
+  right: 20%;
+}
+.arrow-l {
+  top: 10%;
+  left: 20%;
+}
+.card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+}
+.dhabi {
+  color: rgba(168, 191, 205, 1);
+}
+
+@media (max-width: 1400px) {
+  .exp-uae {
+    background-position: center;
+  }
+}
+@media (max-width: 768px) {
+  .abt-dlg {
+    margin: 40px;
+    display: grid;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
